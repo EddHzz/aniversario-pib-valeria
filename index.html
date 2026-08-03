@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>43 Anos — Primeira Igreja Batista de Valéria</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <header class="nav">
+    <div class="nav__mark">PIB Valéria</div>
+    <nav class="nav__links">
+      <a href="#historia">História</a>
+      <a href="#programacao">Programação</a>
+      <a href="#pregadores">Pregadores</a>
+      <a href="#local">Local</a>
+      <a href="#inscricao" class="nav__cta">Inscrição</a>
+    </nav>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero__eyebrow">43 anos de história</div>
+    <h1 class="hero__title">Quatro décadas<br>e três anos de fé.</h1>
+    <p class="hero__subtitle">
+      <!-- EDITAR: data e local do evento -->
+      Celebre com a gente no dia <strong>[DIA/MÊS/ANO]</strong>, na Primeira Igreja Batista de Valéria.
+    </p>
+
+    <div class="countdown" id="countdown" aria-live="polite">
+      <div class="countdown__unit"><span id="cd-dias">00</span><label>dias</label></div>
+      <div class="countdown__unit"><span id="cd-horas">00</span><label>horas</label></div>
+      <div class="countdown__unit"><span id="cd-min">00</span><label>min</label></div>
+      <div class="countdown__unit"><span id="cd-seg">00</span><label>seg</label></div>
+    </div>
+
+    <a href="#inscricao" class="hero__button">Fazer inscrição</a>
+  </section>
+
+  <!-- ===== HISTÓRIA (linha do tempo) ===== -->
+  <section id="historia" class="historia">
+    <h2 class="section__title"><span class="section__num">43</span> anos de caminhada</h2>
+
+    <ol class="timeline">
+      <!-- EDITAR: substitua pelos marcos reais da história da igreja -->
+      <li class="timeline__item">
+        <span class="timeline__year">1983</span>
+        <p>Fundação da igreja — [descreva como começou].</p>
+      </li>
+      <li class="timeline__item">
+        <span class="timeline__year">[ANO]</span>
+        <p>[Marco importante, ex: construção do templo atual].</p>
+      </li>
+      <li class="timeline__item">
+        <span class="timeline__year">[ANO]</span>
+        <p>[Marco importante, ex: mudança de pastorado].</p>
+      </li>
+      <li class="timeline__item">
+        <span class="timeline__year">[ANO]</span>
+        <p>[Marco importante, ex: congresso histórico].</p>
+      </li>
+      <li class="timeline__item timeline__item--now">
+        <span class="timeline__year">2026</span>
+        <p>43 anos — celebrando tudo o que Deus tem feito.</p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ===== PROGRAMAÇÃO ===== -->
+  <section id="programacao" class="programacao">
+    <h2 class="section__title"><span class="section__num">02</span> Programação</h2>
+
+    <div class="agenda">
+      <!-- EDITAR: repita este bloco para cada dia/horário do evento -->
+      <div class="agenda__dia">
+        <h3>[Dia da semana, ex: Sábado]</h3>
+        <ul>
+          <li><time>[19h]</time> — [Atividade, ex: Culto de celebração]</li>
+          <li><time>[20h30]</time> — [Atividade, ex: Louvor especial]</li>
+        </ul>
+      </div>
+      <div class="agenda__dia">
+        <h3>[Dia da semana, ex: Domingo]</h3>
+        <ul>
+          <li><time>[09h]</time> — [Atividade, ex: Escola Bíblica]</li>
+          <li><time>[18h]</time> — [Atividade, ex: Culto de encerramento]</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PREGADORES ===== -->
+  <section id="pregadores" class="pregadores">
+    <h2 class="section__title"><span class="section__num">03</span> Quem prega</h2>
+
+    <div class="pregadores__grid">
+      <!-- EDITAR: repita este bloco para cada pregador -->
+      <div class="pregador__card">
+        <div class="pregador__foto" aria-hidden="true"></div>
+        <h3>[Nome do pastor/pregador]</h3>
+        <p>[Igreja ou cargo]</p>
+      </div>
+      <div class="pregador__card">
+        <div class="pregador__foto" aria-hidden="true"></div>
+        <h3>[Nome do pastor/pregador]</h3>
+        <p>[Igreja ou cargo]</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TRANSMISSÃO AO VIVO ===== -->
+  <section class="live">
+    <h2 class="section__title"><span class="section__num">04</span> Transmissão ao vivo</h2>
+    <p>Não pode vir? Acompanhe pelo canal da igreja.</p>
+    <!-- EDITAR: coloque o link real do YouTube/Instagram -->
+    <a href="#" class="live__button" target="_blank" rel="noopener">Assistir ao vivo</a>
+  </section>
+
+  <!-- ===== LOCAL / MAPA ===== -->
+  <section id="local" class="local">
+    <h2 class="section__title"><span class="section__num">05</span> Como chegar</h2>
+    <!-- EDITAR: endereço real -->
+    <p class="local__endereco">[Rua, número — Valéria, Salvador/BA]</p>
+    <div class="local__mapa">
+      <!-- EDITAR: troque o "q=" pelo endereço real da igreja -->
+      <iframe
+        title="Mapa da igreja"
+        src="https://www.google.com/maps?q=Valéria,Salvador,BA&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- ===== INSCRIÇÃO / QR CODE ===== -->
+  <section id="inscricao" class="inscricao">
+    <h2 class="section__title"><span class="section__num">06</span> Inscrição</h2>
+    <p>Aponte a câmera para o QR Code ou clique no botão abaixo.</p>
+
+    <div class="inscricao__box">
+      <div id="qrcode" class="qrcode"></div>
+      <!-- EDITAR: troque pelo link real do formulário de inscrição -->
+      <a href="#" class="inscricao__button" target="_blank" rel="noopener">Abrir formulário</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Primeira Igreja Batista de Valéria — 1983–2026</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
