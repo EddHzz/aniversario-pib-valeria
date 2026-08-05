@@ -1,8 +1,9 @@
 // ============================================
-// EDITAR: coloque aqui a data/hora real do evento
+// CONTADOR REGRESSIVO
+// EDITAR: ajuste o horário real do primeiro dia do evento (17/09)
 // Formato: "AAAA-MM-DDTHH:MM:SS"
 // ============================================
-const DATA_EVENTO = new Date("2026-11-15T18:00:00");
+const DATA_EVENTO = new Date("2026-09-17T19:00:00");
 
 function atualizarContador() {
   const agora = new Date();
@@ -14,6 +15,8 @@ function atualizarContador() {
     min: document.getElementById("cd-min"),
     seg: document.getElementById("cd-seg"),
   };
+
+  if (!els.dias) return; // elementos não existem nesta página
 
   if (diff <= 0) {
     els.dias.textContent = "00";
@@ -38,18 +41,22 @@ atualizarContador();
 setInterval(atualizarContador, 1000);
 
 // ============================================
-// QR CODE
-// EDITAR: troque o texto abaixo pelo link real
-// do formulário de inscrição (Google Forms, etc.)
+// MENU MOBILE (hamburger)
 // ============================================
-const LINK_INSCRICAO = "https://forms.gle/SEU-LINK-AQUI";
+const navToggle = document.getElementById("navToggle");
+const navLinks = document.getElementById("navLinks");
 
-if (document.getElementById("qrcode")) {
-  new QRCode(document.getElementById("qrcode"), {
-    text: LINK_INSCRICAO,
-    width: 160,
-    height: 160,
-    colorDark: "#16213E",
-    colorLight: "#ffffff",
+if (navToggle && navLinks) {
+  navToggle.addEventListener("click", () => {
+    const aberto = navLinks.classList.toggle("is-open");
+    navToggle.setAttribute("aria-expanded", aberto ? "true" : "false");
+  });
+
+  // Fecha o menu ao clicar em um link (mobile)
+  navLinks.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      navLinks.classList.remove("is-open");
+      navToggle.setAttribute("aria-expanded", "false");
+    });
   });
 }
