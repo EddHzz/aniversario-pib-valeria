@@ -447,14 +447,22 @@ section:not(.hero):not(.verse) {
 }
 .pregador__card { text-align: center; }
 .pregador__foto {
-  width: 100px;
-  height: 100px;
+  width: 112px;
+  height: 112px;
   border-radius: 50%;
-  background: var(--marfim-escuro);
   margin: 0 auto 0.9rem;
-  border: 2px solid var(--dourado);
+  border: 3px solid var(--dourado);
   box-shadow: 0 10px 22px -15px rgba(11, 21, 38, 0.55);
+  overflow: hidden;
+  background: var(--dourado);
+}
+.pregador__foto-imagem {
+  width: 100%;
+  height: 100%;
+  max-width: none;
   object-fit: cover;
+  object-position: center;
+  transform: scale(1.2);
 }
 .pregador__card h3 {
   font-family: var(--fonte-display);
