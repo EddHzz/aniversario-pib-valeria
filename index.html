@@ -12,7 +12,10 @@
 
 <!-- ===== NAV ===== -->
 <header class="nav">
-  <div class="nav__mark">PIB Valéria</div>
+  <div class="nav__mark">
+    <img src="logoorg.png" alt="Logo da Primeira Igreja Batista em Valéria" class="nav__logo">
+    <span>PIB Valéria</span>
+  </div>
   <button class="nav__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
     <span></span><span></span><span></span>
   </button>
@@ -32,32 +35,69 @@
   </nav>
 </header>
 
-<!-- ===== HERO ===== -->
+<!-- ===== ARTE DO TEMA ===== -->
+<figure class="tema-arte">
+  <img src="guiados.png" alt="Guiados por Deus para um novo tempo — arte do tema do aniversário">
+</figure>
+
+<!-- ===== CONTADOR ===== -->
 <section class="hero">
-  <!-- EDITAR: troque pela logo real da igreja (PNG/SVG com fundo transparente) -->
-  <div class="hero__logo" aria-hidden="true">
-    <!-- <img src="logo.png" alt="Logo PIB Valéria"> -->
+  <div class="hero__inner">
+    <h1 class="hero__title">Guiados por Deus para <span class="hero__title--gold">um novo tempo</span></h1>
+    <div class="hero__eyebrow">Primeira Igreja Batista de Valéria · 43 anos</div>
+    <img src="logo43anos-transparente.png" alt="Logo comemorativa de 43 anos da PIB Valéria" class="hero__event-logo">
+    <p class="hero__subtitle">
+      Celebre com a gente de <strong>17 a 20 de setembro</strong>.
+    </p>
+
+    <div class="countdown" id="countdown" aria-live="polite">
+      <div class="countdown__unit"><span id="cd-dias">00</span><label>dias</label></div>
+      <div class="countdown__unit"><span id="cd-horas">00</span><label>horas</label></div>
+      <div class="countdown__unit"><span id="cd-min">00</span><label>min</label></div>
+      <div class="countdown__unit"><span id="cd-seg">00</span><label>seg</label></div>
+    </div>
+
+    <a href="#programacao" class="hero__button">Ver programação</a>
   </div>
+</section>
 
-  <div class="hero__eyebrow">Primeira Igreja Batista de Valéria</div>
-  <h1 class="hero__title">43 anos<br>de fé e história</h1>
-  <p class="hero__subtitle">
-    Celebre com a gente de <strong>17 a 20 de setembro</strong>.
-  </p>
+<!-- ===== VERSÍCULO ===== -->
+<section class="verse">
+  <p class="verse__text">"Eis que faço uma coisa nova... Porei um caminho no deserto e rios nos lugares áridos."</p>
+  <span class="verse__ref">Isaías 43:18-19 — base bíblica do tema deste aniversário</span>
+</section>
 
-  <div class="countdown" id="countdown" aria-live="polite">
-    <div class="countdown__unit"><span id="cd-dias">00</span><label>dias</label></div>
-    <div class="countdown__unit"><span id="cd-horas">00</span><label>horas</label></div>
-    <div class="countdown__unit"><span id="cd-min">00</span><label>min</label></div>
-    <div class="countdown__unit"><span id="cd-seg">00</span><label>seg</label></div>
+<!-- ===== SOBRE O TEMA ===== -->
+<section id="tema" class="tema">
+  <h2 class="section__title"><span class="section__num">01</span> Sobre o tema</h2>
+
+  <div class="tema__grid">
+    <div class="tema__card">
+      <h3>Deus é o Senhor da história da igreja</h3>
+      <p>A igreja não chegou até aqui por força humana ou esforço ministerial apenas. Se há aniversário, há graça. Se há caminhada, há condução. Celebrar é confessar que Deus guiou a igreja até aqui.</p>
+    </div>
+    <div class="tema__card">
+      <h3>Deus guia para renovar, não só preservar</h3>
+      <p>O mesmo Deus que sustenta a igreja é o Deus que a chama a amadurecer, avançar e viver uma nova estação espiritual — uma renovação da consciência de missão, comunhão e serviço.</p>
+    </div>
+    <div class="tema__card">
+      <h3>O novo tempo exige percepção espiritual</h3>
+      <p>"Será que vocês não a percebem?" A igreja pode estar tão acostumada com rotinas antigas que deixa de perceber os sinais de Deus chamando para uma nova maturidade.</p>
+    </div>
+    <div class="tema__card">
+      <h3>O novo passa pelo deserto, mas Deus abre caminho</h3>
+      <p>O novo de Deus não acontece apenas em ambientes favoráveis. Nasce, muitas vezes, em meio a desafios e transições — mas Deus mesmo cria caminho onde não havia caminho.</p>
+    </div>
+    <div class="tema__card tema__card--full">
+      <h3>A igreja precisa viver como igreja e ser igreja</h3>
+      <p>O novo tempo não deve ser apenas institucional. Não basta ter novos projetos, eventos ou estratégias — a igreja precisa viver sua identidade: ser corpo de Cristo, comunidade de discípulos, povo santo, família da fé e testemunha do Reino.</p>
+    </div>
   </div>
-
-  <a href="#programacao" class="hero__button">Ver programação</a>
 </section>
 
 <!-- ===== HISTÓRIA (linha do tempo) ===== -->
 <section id="historia" class="historia">
-  <h2 class="section__title"><span class="section__num">01</span> Nossa caminhada</h2>
+  <h2 class="section__title"><span class="section__num">02</span> Nossa caminhada</h2>
 
   <ol class="timeline">
     <!-- EDITAR: substitua pelos marcos reais da história da igreja -->
@@ -79,14 +119,14 @@
     </li>
     <li class="timeline__item timeline__item--now">
       <span class="timeline__year">2026</span>
-      <p>43 anos — celebrando tudo o que Deus tem feito.</p>
+      <p>43 anos — guiados por Deus para um novo tempo.</p>
     </li>
   </ol>
 </section>
 
 <!-- ===== PROGRAMAÇÃO ===== -->
 <section id="programacao" class="programacao">
-  <h2 class="section__title"><span class="section__num">02</span> Programação</h2>
+  <h2 class="section__title"><span class="section__num">03</span> Programação</h2>
 
   <div class="agenda">
     <div class="agenda__dia">
@@ -108,30 +148,55 @@
       </ul>
     </div>
   </div>
+
+  <p class="programacao__nota">Neste aniversário, vamos homenagear os irmãos que completam 5, 10, 15, 20, 25 e 30 anos de membresia na igreja.</p>
+  <!-- EDITAR: datas ainda a confirmar com o DECOM (17-20/09 ou 10-14/09) -->
 </section>
 
 <!-- ===== PREGADORES ===== -->
 <section id="pregadores" class="pregadores">
-  <h2 class="section__title"><span class="section__num">03</span> Quem prega</h2>
+  <h2 class="section__title"><span class="section__num">04</span> Quem prega</h2>
 
   <div class="pregadores__grid">
-    <!-- EDITAR: repita este bloco para cada pregador -->
     <div class="pregador__card">
-      <div class="pregador__foto" aria-hidden="true"></div>
-      <h3>[Nome do pastor/pregador]</h3>
-      <p>[Igreja ou cargo]</p>
+      <img class="pregador__foto" src="Pr. Davidson Freitas.png" alt="Pr. Davidson Freitas">
+      <h3>Pr. Davidson Freitas</h3>
+      <p>PIB Heliópolis (RJ) — Associação Billy Graham</p>
     </div>
     <div class="pregador__card">
-      <div class="pregador__foto" aria-hidden="true"></div>
-      <h3>[Nome do pastor/pregador]</h3>
-      <p>[Igreja ou cargo]</p>
+      <img class="pregador__foto" src="Pr. Chris Swamson.png" alt="Pr. Chris Swamson">
+      <h3>Pr. Chris Swamson</h3>
+      <p>EUA — Associação Billy Graham</p>
     </div>
+    <div class="pregador__card">
+      <img class="pregador__foto" src="Pr. Éber Mesquita.png" alt="Pr. Éber Mesquita">
+      <h3>Pr. Éber Mesquita</h3>
+      <p>Igreja Batista Sinai</p>
+    </div>
+  </div>
+  <p class="pregadores__nota">+ Participação especial do Coral da Igreja Batista Metropolitana</p>
+  <!-- EDITAR: datas de cada pregador ainda a confirmar -->
+</section>
+
+<!-- ===== HINO ===== -->
+<section class="hino">
+  <h2 class="section__title"><span class="section__num">05</span> Nosso hino</h2>
+  <p class="hino__legenda">"Uma Nova História" — Fernandinho</p>
+  <div class="hino__video">
+    <!-- EDITAR: troque VIDEO_ID pelo ID real do vídeo no YouTube -->
+    <iframe
+            src="https://www.youtube.com/embed/4M4jRcdUZtY"
+            title="Uma Nova História - Fernandinho"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+    </iframe>
   </div>
 </section>
 
 <!-- ===== LOCAL / MAPA ===== -->
 <section id="local" class="local">
-  <h2 class="section__title"><span class="section__num">04</span> Como chegar</h2>
+  <h2 class="section__title"><span class="section__num">06</span> Como chegar</h2>
 
   <div class="local__card">
     <div class="local__endereco">
@@ -174,7 +239,9 @@
 </section>
 
 <footer class="footer">
+  <img src="logoorg.png" alt="Logo da Primeira Igreja Batista em Valéria" class="footer__logo">
   <p>Primeira Igreja Batista de Valéria — 1983–2026</p>
+  <p class="footer__tema">Guiados por Deus para um novo tempo</p>
 </footer>
 
 <script src="script.js"></script>
